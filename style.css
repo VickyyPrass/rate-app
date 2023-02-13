@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #eb7676;
-user-select:none;
+    background: #3f5efb;
+    user-select: none;
 }
 
 .container {
@@ -63,7 +63,7 @@ user-select:none;
 }
 
 .rating label:hover:after,
-.rating label:hover~label:after,
-.rating input:checked~label:after {
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
     opacity: 1;
 }
