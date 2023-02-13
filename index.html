@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="../1. icon font/fontawesome-free-5.13.0-web/css/all.min.css"
+        />
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Nilai Kepuasan Anda</h1>
+            <br />
+            <div class="utama">
+                <img src="img/0.png" id="gambar" />
+            </div>
+            <br /><br />
+            <div class="rating">
+                <input type="radio" name="star" id="star1" onclick="ganti(5)" />
+                <label
+                    for="star1"
+                    class="text-title"
+                    title="Sangat Bagus Sekali"
+                ></label>
+
+                <input type="radio" name="star" id="star2" onclick="ganti(4)" />
+                <label
+                    for="star2"
+                    class="text-title"
+                    title="Bagus Sekali"
+                ></label>
+
+                <input type="radio" name="star" id="star3" onclick="ganti(3)" />
+                <label
+                    for="star3"
+                    class="text-title"
+                    title="Biasa Saja"
+                ></label>
+
+                <input type="radio" name="star" id="star4" onclick="ganti(2)" />
+                <label
+                    for="star4"
+                    class="text-title"
+                    title="Tidak Bagus"
+                ></label>
+
+                <input type="radio" name="star" id="star5" onclick="ganti(1)" />
+                <label
+                    for="star5"
+                    class="text-title"
+                    title="Sangat Tidak Bagus"
+                ></label>
+            </div>
+            <p class="title"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

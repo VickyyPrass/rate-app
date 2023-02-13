@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eb7676;
+user-select:none;
+}
+
+.container {
+    color: white;
+    font-family: sans-serif;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.utama img#gambar {
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.rating {
+    transform: translate(-30%, -50%) rotateY(180deg);
+    display: flex;
+    z-index: 9999;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label:before {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
+.rating label:after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: #fffa00;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 2px -2px 8px #fffa00;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}
